@@ -10,7 +10,7 @@ import {
   FiStar,
 } from "react-icons/fi";
 
-import avatar from "../../assets/images/avatar1.png";
+import avatar from "../../assets/images/avatar1.PNG";
 import pdf from "../../assets/pdf.png";
 import zip from "../../assets/zip.png";
 
