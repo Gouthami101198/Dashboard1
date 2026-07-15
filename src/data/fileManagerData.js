@@ -1,8 +1,8 @@
 // Folder Icons
-import folderBlue from "../assets/folders/folder-blue.png";
-import folderYellow from "../assets/folders/folder-yellow.png";
-import folderGreen from "../assets/folders/folder-green.png";
-import folderRed from "../assets/folders/folder-red.png";
+import folderBlue from "../assets/folders/folder-blue.PNG";
+import folderYellow from "../assets/folders/folder-yellow.PNG";
+import folderGreen from "../assets/folders/folder-green.PNG";
+import folderRed from "../assets/folders/folder-red.PNG";
 
 // File Icons
 import pdfIcon from "../assets/pdf.png";
