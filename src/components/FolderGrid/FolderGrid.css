@@ -1,0 +1,44 @@
+.folder-grid-section{
+    margin-bottom:40px;
+}
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.section-header h2{
+    margin:0;
+    font-size:24px;
+    color:#333;
+    font-weight:700;
+}
+
+.section-header button{
+    border:none;
+    background:none;
+    color:#2FB463;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.folder-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+.folder-grid{
+    grid-template-columns:1fr;
+}
+
+.section-header h2{
+    font-size:20px;
+}
+
+}

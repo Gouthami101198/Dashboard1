@@ -1,0 +1,107 @@
+.contacts-table-wrapper{
+    width:100%;
+    overflow-x:auto;
+    background:#fff;
+    border-radius:18px;
+}
+
+.contacts-table{
+    width:100%;
+    min-width:1000px;
+    border-collapse:collapse;
+}
+
+/* Header */
+
+.contacts-table thead{
+    background:#fff;
+}
+
+.contacts-table thead th{
+    padding:18px 20px;
+    text-align:left;
+    font-size:13px;
+    font-weight:600;
+    color:#8B8F99;
+    letter-spacing:.5px;
+    border-bottom:1px solid #ECECEC;
+}
+
+.contacts-table thead th:first-child{
+    width:50px;
+    text-align:center;
+}
+
+.contacts-table thead input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    accent-color:#22C55E;
+    cursor:pointer;
+}
+
+/* Body */
+
+.contacts-table tbody td{
+    padding:18px 20px;
+    border-bottom:1px solid #ECECEC;
+}
+
+.contacts-table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+.contacts-table tbody tr{
+    transition:.3s;
+}
+
+.contacts-table tbody tr:hover{
+    background:#F9FAFB;
+}
+
+/* Scrollbar */
+
+.contacts-table-wrapper::-webkit-scrollbar{
+    height:8px;
+}
+
+.contacts-table-wrapper::-webkit-scrollbar-track{
+    background:#F3F4F6;
+}
+
+.contacts-table-wrapper::-webkit-scrollbar-thumb{
+    background:#D1D5DB;
+    border-radius:10px;
+}
+
+.contacts-table-wrapper::-webkit-scrollbar-thumb:hover{
+    background:#9CA3AF;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.contacts-table{
+    min-width:900px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.contacts-table{
+    min-width:850px;
+}
+
+.contacts-table thead th{
+    padding:15px;
+    font-size:12px;
+}
+
+.contacts-table tbody td{
+    padding:15px;
+}
+
+}

@@ -1,0 +1,31 @@
+.mail-list{
+    width:370px;
+    height:calc(100vh - 140px);
+    overflow-y:auto;
+    background:#fff;
+    border-right:1px solid #ececec;
+}
+
+.mail-list::-webkit-scrollbar{
+    width:6px;
+}
+
+.mail-list::-webkit-scrollbar-thumb{
+    background:#d8d8d8;
+    border-radius:10px;
+}
+
+.mail-list::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+@media(max-width:992px){
+
+.mail-list{
+    width:100%;
+    height:auto;
+    border-right:none;
+    border-bottom:1px solid #ececec;
+}
+
+}

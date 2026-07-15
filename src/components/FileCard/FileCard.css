@@ -1,0 +1,136 @@
+.file-card{
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+    border:1px solid #ececec;
+    transition:.3s;
+}
+
+.file-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.file-card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+
+.file-icon-box{
+    width:65px;
+    height:65px;
+    border-radius:16px;
+    background:#f7f8fc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.file-icon{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+}
+
+.file-menu{
+    width:36px;
+    height:36px;
+    border:none;
+    background:#f7f8fc;
+    border-radius:10px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#666;
+}
+
+.file-card-body h3{
+    margin:0 0 8px;
+    font-size:18px;
+    color:#333;
+    line-height:1.4;
+}
+
+.file-type{
+    display:inline-block;
+    background:#e8f5e9;
+    color:#2FB463;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.file-details{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.file-details small{
+    color:#999;
+    display:block;
+    margin-bottom:5px;
+}
+
+.file-details p{
+    margin:0;
+    color:#444;
+    font-size:14px;
+    font-weight:500;
+}
+
+.file-card-footer{
+    display:flex;
+    gap:12px;
+    margin-top:22px;
+}
+
+.action-btn{
+    flex:1;
+    border:none;
+    background:#f5f7fb;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    color:#555;
+    transition:.3s;
+}
+
+.action-btn:hover{
+    background:#2FB463;
+    color:#fff;
+}
+
+.download{
+    background:#2FB463;
+    color:#fff;
+}
+
+.download:hover{
+    background:#249a53;
+}
+
+@media(max-width:768px){
+
+.file-card{
+    padding:18px;
+}
+
+.file-card-body h3{
+    font-size:16px;
+}
+
+.file-card-footer{
+    flex-direction:column;
+}
+
+}

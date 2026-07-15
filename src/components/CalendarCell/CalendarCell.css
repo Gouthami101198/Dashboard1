@@ -1,0 +1,98 @@
+.calendar-cell{
+    min-height:140px;
+    border-right:1px solid #ececec;
+    border-bottom:1px solid #ececec;
+    padding:10px;
+    position:relative;
+    background:#fff;
+}
+
+.calendar-cell:last-child{
+    border-right:none;
+}
+
+.date{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-left:auto;
+    font-size:16px;
+    font-weight:600;
+    color:#444;
+}
+
+.date.active{
+    background:#2fb463;
+    color:#fff;
+}
+
+.disabled{
+    background:#fafafa;
+    color:#bbb;
+}
+
+.events{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.event-card{
+    border-radius:8px;
+    padding:8px 10px;
+    font-size:12px;
+}
+
+.event-card h5{
+    margin:0;
+    font-size:13px;
+    font-weight:600;
+}
+
+.event-card span{
+    font-size:11px;
+    color:#666;
+}
+
+/* Event Colors */
+
+.blue{
+    background:#d8f3ff;
+    border-left:4px solid #39c6f4;
+}
+
+.green{
+    background:#dff8e7;
+    border-left:4px solid #34c759;
+}
+
+.yellow{
+    background:#fff5d8;
+    border-left:4px solid #ffc83d;
+}
+
+.red{
+    background:#ffe6e6;
+    border-left:4px solid #ff6b6b;
+}
+
+.purple{
+    background:#efe6ff;
+    border-left:4px solid #8b5cf6;
+}
+
+@media(max-width:768px){
+
+.calendar-cell{
+    min-height:120px;
+}
+
+.event-card{
+    padding:6px;
+}
+
+}

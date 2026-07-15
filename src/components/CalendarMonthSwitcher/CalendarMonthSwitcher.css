@@ -1,0 +1,92 @@
+.month-switcher{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 25px;
+    background:#fff;
+    border-bottom:1px solid #ececec;
+}
+
+.switcher-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.switch-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:10px;
+    background:#f5f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+    font-size:18px;
+    color:#444;
+}
+
+.switch-btn:hover{
+    background:#22c55e;
+    color:#fff;
+}
+
+.today-btn{
+    border:none;
+    background:#f5f7fb;
+    padding:11px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.today-btn:hover{
+    background:#22c55e;
+    color:#fff;
+}
+
+.switcher-center h2{
+    margin:0;
+    font-size:30px;
+    color:#2f3542;
+    font-weight:700;
+}
+
+.switcher-center span{
+    color:#7d8597;
+    font-weight:500;
+}
+
+@media(max-width:768px){
+
+.month-switcher{
+    flex-direction:column;
+    gap:20px;
+}
+
+.switcher-left{
+    width:100%;
+    justify-content:center;
+}
+
+.switcher-center h2{
+    font-size:24px;
+}
+
+}
+
+@media(max-width:480px){
+
+.switcher-left{
+    flex-wrap:wrap;
+}
+
+.today-btn{
+    width:100%;
+}
+
+}

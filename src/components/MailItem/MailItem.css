@@ -1,0 +1,109 @@
+.mail-item{
+    display:flex;
+    gap:15px;
+    padding:20px;
+    cursor:pointer;
+    border-bottom:1px solid #ececec;
+    transition:.3s;
+    background:#fff;
+}
+
+.mail-item:hover{
+    background:#f8f9fb;
+}
+
+.mail-item.active{
+    background:#f6f7fb;
+}
+
+.mail-avatar img{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.mail-info{
+    flex:1;
+}
+
+.mail-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:6px;
+}
+
+.mail-top h4{
+    margin:0;
+    font-size:16px;
+    color:#666;
+    font-weight:500;
+}
+
+.mail-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.attachment-icon{
+    color:#999;
+    font-size:16px;
+}
+
+.mail-time{
+    font-size:13px;
+    color:#999;
+}
+
+.mail-info h3{
+    margin:4px 0 8px;
+    font-size:20px;
+    color:#333;
+    font-weight:600;
+}
+
+.mail-info p{
+    margin:0;
+    color:#8d8d8d;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.mail-bottom{
+    margin-top:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.mail-bottom svg{
+    font-size:18px;
+    color:#999;
+}
+
+.bookmark.active{
+    color:#ff6b6b;
+    fill:#ff6b6b;
+}
+
+@media(max-width:768px){
+
+.mail-item{
+    padding:15px;
+}
+
+.mail-info h3{
+    font-size:17px;
+}
+
+.mail-top h4{
+    font-size:15px;
+}
+
+.mail-info p{
+    font-size:13px;
+}
+
+}

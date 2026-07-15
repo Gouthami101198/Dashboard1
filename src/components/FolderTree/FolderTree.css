@@ -1,0 +1,66 @@
+.folder-tree{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.tree-node{
+    list-style:none;
+}
+
+.tree-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 10px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.tree-item:hover{
+    background:#f5f7fb;
+}
+
+.tree-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.tree-folder-icon{
+    color:#F7B84B;
+    font-size:18px;
+}
+
+.tree-space{
+    width:16px;
+}
+
+.tree-children{
+    list-style:none;
+    margin-left:30px;
+    padding-left:18px;
+    border-left:2px dashed #dddddd;
+}
+
+.tree-children .tree-item{
+    padding:10px 8px;
+}
+
+.tree-item span{
+    color:#444;
+    font-size:15px;
+}
+
+@media(max-width:768px){
+
+.tree-item{
+    padding:10px;
+}
+
+.tree-item span{
+    font-size:14px;
+}
+
+}

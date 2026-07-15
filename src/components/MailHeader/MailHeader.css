@@ -1,0 +1,91 @@
+.mail-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 30px;
+    border-bottom:1px solid #ececec;
+    background:#fff;
+}
+
+.mail-user{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.user-avatar{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.user-info h3{
+    margin:0;
+    font-size:22px;
+    color:#333;
+}
+
+.user-info p{
+    margin:5px 0;
+    color:#777;
+    font-size:14px;
+}
+
+.user-info span{
+    color:#999;
+    font-size:13px;
+}
+
+.mail-header-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.mail-time{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#777;
+    font-size:14px;
+}
+
+.mail-icon{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:10px;
+    background:#f6f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-size:18px;
+    color:#666;
+    transition:.3s;
+}
+
+.mail-icon:hover{
+    background:#2fb463;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+.mail-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.mail-header-right{
+    width:100%;
+    justify-content:space-between;
+}
+
+.user-info h3{
+    font-size:18px;
+}
+
+}

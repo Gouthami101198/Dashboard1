@@ -1,0 +1,71 @@
+.friends-card{
+    background:#fff;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.friends-title{
+    margin-bottom:20px;
+    font-size:22px;
+    color:#333;
+}
+
+.friends-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.friend-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.friend-item:hover{
+    transform:translateX(5px);
+}
+
+.friend-avatar{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.friend-info h4{
+    margin:0;
+    font-size:15px;
+    color:#333;
+    font-weight:600;
+}
+
+.friend-info p{
+    margin-top:4px;
+    color:#8b8f99;
+    font-size:13px;
+}
+
+@media(max-width:768px){
+
+.friends-card{
+    padding:18px;
+}
+
+.friend-avatar{
+    width:42px;
+    height:42px;
+}
+
+.friend-info h4{
+    font-size:14px;
+}
+
+.friend-info p{
+    font-size:12px;
+}
+
+}

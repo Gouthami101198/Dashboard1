@@ -1,0 +1,35 @@
+.feed{
+    width:100%;
+}
+
+.feed-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.feed-header h2{
+    margin:0;
+    font-size:28px;
+    font-weight:700;
+    color:#2f3542;
+}
+
+.feed-posts{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+@media(max-width:768px){
+
+.feed-header h2{
+    font-size:24px;
+}
+
+.feed-posts{
+    gap:20px;
+}
+
+}

@@ -1,0 +1,92 @@
+.attachment-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:16px;
+    padding:16px 20px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.attachment-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.attachment-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.attachment-image{
+    width:55px;
+    height:55px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.attachment-icon{
+    width:55px;
+    height:55px;
+    border-radius:12px;
+    background:#F5F7FB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    color:#2FB463;
+}
+
+.attachment-info h4{
+    margin:0;
+    font-size:16px;
+    color:#333;
+}
+
+.attachment-info p{
+    margin:5px 0;
+    color:#777;
+    font-size:14px;
+}
+
+.attachment-info span{
+    color:#999;
+    font-size:13px;
+}
+
+.download-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:12px;
+    background:#F5F7FB;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    color:#555;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#2FB463;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+.attachment-card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.download-btn{
+    align-self:flex-end;
+}
+
+}

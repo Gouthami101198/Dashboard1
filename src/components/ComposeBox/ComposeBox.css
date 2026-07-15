@@ -1,0 +1,123 @@
+.compose-box{
+    width:100%;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+    overflow:hidden;
+}
+
+.compose-header{
+    background:#2FB463;
+    color:#fff;
+    padding:18px 25px;
+}
+
+.compose-header h3{
+    margin:0;
+    font-size:20px;
+    font-weight:600;
+}
+
+.compose-body{
+    padding:25px;
+}
+
+.compose-input{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    margin-bottom:18px;
+    font-size:15px;
+    outline:none;
+}
+
+.compose-input:focus{
+    border-color:#2FB463;
+}
+
+.compose-textarea{
+    width:100%;
+    padding:16px;
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    resize:none;
+    font-size:15px;
+    outline:none;
+    font-family:inherit;
+}
+
+.compose-textarea:focus{
+    border-color:#2FB463;
+}
+
+.compose-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 25px;
+    border-top:1px solid #ececec;
+}
+
+.attach-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#F5F7FB;
+    border:none;
+    border-radius:10px;
+    padding:12px 18px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.compose-actions{
+    display:flex;
+    gap:12px;
+}
+
+.delete-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border:none;
+    background:#ffebee;
+    color:#e53935;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.send-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border:none;
+    background:#2FB463;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.send-btn:hover{
+    background:#249a53;
+}
+
+@media(max-width:768px){
+
+.compose-footer{
+    flex-direction:column;
+    gap:20px;
+    align-items:stretch;
+}
+
+.compose-actions{
+    width:100%;
+}
+
+.compose-actions button{
+    flex:1;
+}
+
+}

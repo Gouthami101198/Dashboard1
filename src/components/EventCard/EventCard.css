@@ -1,0 +1,84 @@
+.event-card{
+    width:100%;
+    padding:10px 12px;
+    border-radius:8px;
+    margin-bottom:8px;
+    cursor:pointer;
+    transition:.3s;
+    border-left:5px solid transparent;
+}
+
+.event-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+}
+
+.event-card h4{
+    margin:0;
+    font-size:14px;
+    font-weight:600;
+    color:#333;
+}
+
+.event-time{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-top:6px;
+    font-size:12px;
+    color:#666;
+}
+
+/* Blue */
+
+.event-card.blue{
+    background:#E3F7FF;
+    border-left-color:#3BC7F5;
+}
+
+/* Green */
+
+.event-card.green{
+    background:#E6F9E8;
+    border-left-color:#2FBF71;
+}
+
+/* Yellow */
+
+.event-card.yellow{
+    background:#FFF7DD;
+    border-left-color:#FFC83D;
+}
+
+/* Purple */
+
+.event-card.purple{
+    background:#F3E8FF;
+    border-left-color:#9B5DE5;
+}
+
+/* Red */
+
+.event-card.red{
+    background:#FFE8E8;
+    border-left-color:#FF6B6B;
+}
+
+/* Cyan */
+
+.event-card.cyan{
+    background:#E4FCFF;
+    border-left-color:#2DD4BF;
+}
+
+@media(max-width:768px){
+
+.event-card h4{
+    font-size:13px;
+}
+
+.event-time{
+    font-size:11px;
+}
+
+}

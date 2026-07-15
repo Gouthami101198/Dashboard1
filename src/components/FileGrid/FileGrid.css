@@ -1,0 +1,44 @@
+.file-grid-section{
+    margin-top:40px;
+}
+
+.file-grid-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.file-grid-header h2{
+    margin:0;
+    font-size:24px;
+    font-weight:700;
+    color:#333;
+}
+
+.view-all-btn{
+    border:none;
+    background:none;
+    color:#2FB463;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.file-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+.file-grid{
+    grid-template-columns:1fr;
+}
+
+.file-grid-header h2{
+    font-size:20px;
+}
+
+}

@@ -1,0 +1,139 @@
+.mail-sidebar{
+    width:250px;
+    background:#fff;
+    border-right:1px solid #ececec;
+    padding:24px 18px;
+    min-height:calc(100vh - 70px);
+}
+
+.new-message-btn{
+    width:100%;
+    height:48px;
+    border:none;
+    background:#2EA043;
+    color:#fff;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.new-message-btn:hover{
+    background:#248737;
+}
+
+.mail-menu{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.mail-menu li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 12px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-bottom:6px;
+    transition:.3s;
+}
+
+.mail-menu li:hover{
+    background:#f5f5f5;
+}
+
+.mail-menu li div{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-size:16px;
+    color:#444;
+}
+
+.mail-menu li.active{
+    background:#f5f5f5;
+    border-left:4px solid #2EA043;
+}
+
+.mail-menu svg{
+    font-size:18px;
+}
+
+.badge{
+    width:22px;
+    height:22px;
+    background:#2EA043;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:11px;
+    font-weight:600;
+}
+
+.badge.red{
+    background:#ff6b6b;
+}
+
+.label-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:35px;
+    margin-bottom:20px;
+}
+
+.label-header h4{
+    margin:0;
+    color:#888;
+    font-size:14px;
+    font-weight:600;
+}
+
+.label-header button{
+    width:28px;
+    height:28px;
+    border:none;
+    border-radius:50%;
+    background:#f3f3f3;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.label-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.label-list li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:12px 0;
+    font-size:15px;
+    color:#444;
+}
+
+.label-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+@media(max-width:992px){
+
+.mail-sidebar{
+    width:100%;
+    min-height:auto;
+    border-right:none;
+    border-bottom:1px solid #ececec;
+}
+
+}
