@@ -1,0 +1,46 @@
+.mail-page{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+.mail-main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.mail-container{
+    display:flex;
+    flex:1;
+    overflow:hidden;
+}
+
+.mail-section{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+}
+
+.mail-body{
+    flex:1;
+    display:flex;
+    overflow:hidden;
+}
+
+@media(max-width:1200px){
+
+.mail-body{
+    flex-direction:column;
+}
+
+}
+
+@media(max-width:768px){
+
+.mail-container{
+    flex-direction:column;
+}
+
+}

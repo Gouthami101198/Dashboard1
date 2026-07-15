@@ -1,0 +1,64 @@
+.file-manager-page{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+.file-manager-main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.file-manager-layout{
+    flex:1;
+    display:grid;
+    grid-template-columns:280px 1fr 320px;
+    overflow:hidden;
+}
+
+.file-manager-content{
+    padding:30px;
+    overflow-y:auto;
+}
+
+.file-manager-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+@media(max-width:1200px){
+
+.file-manager-layout{
+    grid-template-columns:250px 1fr;
+}
+
+.file-manager-layout .file-info-panel{
+    display:none;
+}
+
+}
+
+@media(max-width:992px){
+
+.file-manager-layout{
+    grid-template-columns:1fr;
+}
+
+.file-manager-top{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+}
+
+@media(max-width:768px){
+
+.file-manager-content{
+    padding:20px;
+}
+
+}

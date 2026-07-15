@@ -1,0 +1,70 @@
+.profile-page{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+.profile-main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.profile-content{
+    padding:30px;
+}
+
+.profile-layout{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:30px;
+    margin-top:30px;
+}
+
+.profile-left{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.profile-center{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.profile-layout{
+    grid-template-columns:1fr;
+}
+
+.profile-left{
+    order:2;
+}
+
+.profile-center{
+    order:1;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.profile-content{
+    padding:20px;
+}
+
+}
+
+@media(max-width:576px){
+
+.profile-content{
+    padding:15px;
+}
+
+}

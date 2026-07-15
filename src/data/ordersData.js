@@ -1,0 +1,123 @@
+import avatar1 from "../assets/avatars/avatar1.PNG";
+import avatar2 from "../assets/avatars/avatar2.PNG";
+import avatar3 from "../assets/avatars/avatar3.PNG";
+import avatar4 from "../assets/avatars/avatar4.PNG";
+import avatar5 from "../assets/avatars/avatar5.PNG";
+import avatar6 from "../assets/avatars/avatar6.PNG";
+import avatar7 from "../assets/avatars/avatar7.PNG";
+import avatar8 from "../assets/avatars/avatar8.PNG";
+import avatar9 from "../assets/avatars/avatar9.PNG";
+import avatar10 from "../assets/avatars/avatar10.PNG";
+
+export const ordersData = [
+  {
+    id: 1,
+    orderId: "#790841",
+    avatar: avatar1,
+    customer: "Claire Warren",
+    email: "claire@gmail.com",
+    date: "12 Sep 2020",
+    amount: "$145.85",
+    payment: "PayPal",
+    status: "Shipped",
+  },
+  {
+    id: 2,
+    orderId: "#790842",
+    avatar: avatar2,
+    customer: "Theresa Robertson",
+    email: "theresa@gmail.com",
+    date: "12 Sep 2020",
+    amount: "$289.50",
+    payment: "Visa",
+    status: "Processing",
+  },
+  {
+    id: 3,
+    orderId: "#790843",
+    avatar: avatar3,
+    customer: "Nathan Hawkins",
+    email: "nathan@gmail.com",
+    date: "13 Sep 2020",
+    amount: "$98.40",
+    payment: "MasterCard",
+    status: "Pending",
+  },
+  {
+    id: 4,
+    orderId: "#790844",
+    avatar: avatar4,
+    customer: "Norma Flores",
+    email: "norma@gmail.com",
+    date: "14 Sep 2020",
+    amount: "$420.00",
+    payment: "PayPal",
+    status: "Cancelled",
+  },
+  {
+    id: 5,
+    orderId: "#790845",
+    avatar: avatar5,
+    customer: "Albert Flores",
+    email: "albert@gmail.com",
+    date: "14 Sep 2020",
+    amount: "$350.75",
+    payment: "Stripe",
+    status: "Completed",
+  },
+  {
+    id: 6,
+    orderId: "#790846",
+    avatar: avatar6,
+    customer: "Jenny Wilson",
+    email: "jenny@gmail.com",
+    date: "15 Sep 2020",
+    amount: "$180.90",
+    payment: "PayPal",
+    status: "Shipped",
+  },
+  {
+    id: 7,
+    orderId: "#790847",
+    avatar: avatar7,
+    customer: "Guy Hawkins",
+    email: "guy@gmail.com",
+    date: "15 Sep 2020",
+    amount: "$620.00",
+    payment: "Visa",
+    status: "Refunded",
+  },
+  {
+    id: 8,
+    orderId: "#790848",
+    avatar: avatar8,
+    customer: "Brooklyn Simmons",
+    email: "brooklyn@gmail.com",
+    date: "16 Sep 2020",
+    amount: "$275.99",
+    payment: "MasterCard",
+    status: "Processing",
+  },
+  {
+    id: 9,
+    orderId: "#790849",
+    avatar: avatar9,
+    customer: "Kristin Watson",
+    email: "kristin@gmail.com",
+    date: "16 Sep 2020",
+    amount: "$510.20",
+    payment: "PayPal",
+    status: "Completed",
+  },
+  {
+    id: 10,
+    orderId: "#790850",
+    avatar: avatar10,
+    customer: "Jacob Jones",
+    email: "jacob@gmail.com",
+    date: "17 Sep 2020",
+    amount: "$135.50",
+    payment: "Visa",
+    status: "Pending",
+  },
+];

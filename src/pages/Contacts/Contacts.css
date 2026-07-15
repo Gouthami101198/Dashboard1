@@ -1,0 +1,114 @@
+.contacts-page{
+    display:flex;
+    min-height:100vh;
+    background:#F5F7FB;
+}
+
+/* Main */
+
+.contacts-main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+/* Content */
+
+.contacts-container{
+    flex:1;
+    padding:30px;
+    overflow-y:auto;
+}
+
+/* Layout */
+
+.contacts-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* Left */
+
+.contacts-left{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Right */
+
+.contacts-right{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+/* Card */
+
+.contacts-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+/* Large Screen */
+
+@media(max-width:1200px){
+
+.contacts-layout{
+    grid-template-columns:1.7fr 1fr;
+}
+
+.contacts-container{
+    padding:25px;
+}
+
+}
+
+/* Laptop */
+
+@media(max-width:992px){
+
+.contacts-layout{
+    grid-template-columns:1fr;
+}
+
+.contacts-container{
+    padding:20px;
+}
+
+.contacts-right{
+    margin-top:20px;
+}
+
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+.contacts-container{
+    padding:15px;
+}
+
+.contacts-card{
+    border-radius:15px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.contacts-container{
+    padding:10px;
+}
+
+.contacts-layout{
+    gap:15px;
+}
+
+}
