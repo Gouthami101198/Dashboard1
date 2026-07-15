@@ -1,4 +1,4 @@
-import "./Social.css";
+import "./social.css";
 
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
