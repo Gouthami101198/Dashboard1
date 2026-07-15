@@ -15,7 +15,7 @@ import VideoPost from "../../components/VideoPost/VideoPost";
 
 import { videoPost } from "../../data/socialData";
 
-const Social = () => {
+const social = () => {
   return (
     <div className="profile-page">
 
@@ -66,5 +66,8 @@ const Social = () => {
     </div>
   );
 };
+export default social;
+
+
 
 export default Social;
