@@ -1,0 +1,122 @@
+.sales-card{
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    display:flex;
+    flex-direction:column;
+}
+
+.sales-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.sales-header h2{
+    font-size:26px;
+    color:#222;
+}
+
+.sales-btn{
+    border:none;
+    background:#b7ef73;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.progress-wrapper{
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.progress-circle{
+    position:relative;
+    width:180px;
+    height:180px;
+}
+
+.progress-circle svg{
+    transform:rotate(-90deg);
+}
+
+.progress-circle circle{
+    fill:none;
+    stroke-width:12;
+}
+
+.bg{
+    stroke:#ececec;
+}
+
+.progress{
+    stroke:#6edc68;
+    stroke-linecap:round;
+    stroke-dasharray:471;
+    stroke-dashoffset:95;
+}
+
+.progress-content{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.progress-content h2{
+    font-size:30px;
+    color:#222;
+}
+
+.progress-content p{
+    color:#777;
+    margin-top:5px;
+}
+
+.sales-footer{
+    margin-top:20px;
+}
+
+.sales-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#f7f8fb;
+    padding:15px;
+    border-radius:14px;
+}
+
+.up-icon{
+    color:#2ecc71;
+    font-size:24px;
+}
+
+.sales-info h3{
+    color:#2ecc71;
+    font-size:22px;
+}
+
+.sales-info p{
+    color:#777;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+.progress-circle{
+    width:150px;
+    height:150px;
+}
+
+.progress-circle svg{
+    width:150px;
+    height:150px;
+}
+
+}

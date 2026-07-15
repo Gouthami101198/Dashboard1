@@ -1,0 +1,143 @@
+.profile-header{
+    width:100%;
+    margin-bottom:30px;
+}
+
+.profile-cover{
+    width:100%;
+    height:230px;
+    border-radius:18px 18px 0 0;
+    overflow:hidden;
+}
+
+.profile-cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profile-card{
+    background:#fff;
+    border-radius:0 0 18px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+    box-shadow:0 3px 15px rgba(0,0,0,.06);
+}
+
+.profile-left{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.profile-avatar{
+    width:120px;
+    height:120px;
+    border-radius:22px;
+    object-fit:cover;
+    border:5px solid #fff;
+    margin-top:-70px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.profile-info h2{
+    margin:0;
+    font-size:34px;
+    color:#2d3436;
+}
+
+.profile-info p{
+    margin:8px 0 18px;
+    color:#777;
+    font-size:16px;
+}
+
+.social-icons{
+    display:flex;
+    gap:16px;
+}
+
+.social-icons a{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#f5f7fb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#666;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#2FB463;
+    color:#fff;
+}
+
+.profile-right{
+    display:grid;
+    grid-template-columns:repeat(2,200px);
+    gap:25px 40px;
+}
+
+.info-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.info-box span{
+    color:#999;
+    text-transform:uppercase;
+    font-size:12px;
+    margin-bottom:6px;
+}
+
+.info-box strong{
+    color:#333;
+    font-size:15px;
+    font-weight:600;
+}
+
+@media(max-width:1100px){
+
+.profile-card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:30px;
+}
+
+.profile-right{
+    width:100%;
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.profile-cover{
+    height:180px;
+}
+
+.profile-left{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.profile-avatar{
+    width:100px;
+    height:100px;
+}
+
+.profile-info h2{
+    font-size:28px;
+}
+
+.profile-right{
+    grid-template-columns:1fr;
+}
+
+}

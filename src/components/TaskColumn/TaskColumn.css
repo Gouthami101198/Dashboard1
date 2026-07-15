@@ -1,0 +1,88 @@
+.task-column{
+    background:#f8f9fc;
+    border-radius:20px;
+    padding:20px;
+    min-height:750px;
+}
+
+.column-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.column-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.column-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.column-title h3{
+    font-size:18px;
+    font-weight:600;
+    color:#333;
+}
+
+.task-count{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:#ececec;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    font-weight:600;
+    color:#555;
+}
+
+.column-add{
+    width:38px;
+    height:38px;
+    border:none;
+    border-radius:12px;
+    background:#fff;
+    cursor:pointer;
+    font-size:20px;
+    color:#666;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.column-add:hover{
+    background:#34c759;
+    color:#fff;
+}
+
+.column-body{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+@media(max-width:1200px){
+
+.task-column{
+    min-height:auto;
+}
+
+}
+
+@media(max-width:768px){
+
+.task-column{
+    padding:15px;
+}
+
+.column-title h3{
+    font-size:16px;
+}
+
+}

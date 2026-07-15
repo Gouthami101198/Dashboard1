@@ -1,0 +1,75 @@
+.products-tabs{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:30px;
+    border-bottom:1px solid #ECECEC;
+}
+
+/* Tab Button */
+
+.tab-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:16px 0;
+    background:none;
+    border:none;
+    cursor:pointer;
+    position:relative;
+    color:#8A8F99;
+    font-size:18px;
+    transition:.3s;
+}
+
+.tab-btn:hover{
+    color:#2F3542;
+}
+
+.tab-btn.active{
+    color:#2F3542;
+    font-weight:600;
+}
+
+.tab-btn.active::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-1px;
+    width:100%;
+    height:3px;
+    background:#22C55E;
+    border-radius:10px;
+}
+
+/* Count Badge */
+
+.tab-count{
+    background:#F3F5F8;
+    color:#7A7A7A;
+    padding:3px 8px;
+    border-radius:8px;
+    font-size:12px;
+    font-weight:600;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.products-tabs{
+    gap:18px;
+    overflow-x:auto;
+    white-space:nowrap;
+    scrollbar-width:none;
+}
+
+.products-tabs::-webkit-scrollbar{
+    display:none;
+}
+
+.tab-btn{
+    font-size:15px;
+}
+
+}

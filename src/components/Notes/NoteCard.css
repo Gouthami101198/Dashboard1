@@ -1,0 +1,137 @@
+.note-card{
+    background:#ffffff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    transition:.3s;
+    position:relative;
+    min-height:260px;
+}
+
+/* Yellow Corner */
+
+.note-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    border-top:34px solid #FFC93C;
+    border-right:34px solid transparent;
+}
+
+/* Hover */
+
+.note-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+/* Header */
+
+.note-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 22px;
+    border-bottom:1px dashed #E5E7EB;
+}
+
+.note-date{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#6B7280;
+    font-size:14px;
+}
+
+.note-date svg{
+    font-size:16px;
+}
+
+/* Pin */
+
+.pin-btn{
+    width:34px;
+    height:34px;
+    border:none;
+    background:#F9FAFB;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.pin-btn svg{
+    font-size:17px;
+    color:#6B7280;
+}
+
+.pin-btn:hover{
+    background:#22C55E;
+}
+
+.pin-btn:hover svg{
+    color:#fff;
+}
+
+/* Body */
+
+.note-body{
+    padding:24px;
+}
+
+.note-body h3{
+    margin:0 0 18px;
+    font-size:30px;
+    color:#2F3542;
+    font-weight:700;
+}
+
+.note-body p{
+    margin:0;
+    color:#6B7280;
+    line-height:1.8;
+    font-size:15px;
+}
+
+/* Pinned */
+
+.note-card.pinned{
+    border:2px solid #22C55E;
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+.note-card{
+    min-height:230px;
+}
+
+.note-body h3{
+    font-size:24px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.note-body{
+    padding:18px;
+}
+
+.note-body h3{
+    font-size:22px;
+}
+
+.note-body p{
+    font-size:14px;
+}
+
+}

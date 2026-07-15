@@ -1,0 +1,99 @@
+.product-row{
+    transition:.3s;
+}
+
+.product-row:hover{
+    background:#F8FAFC;
+}
+
+.product-row td{
+    padding:20px;
+    border-bottom:1px solid #ECECEC;
+    vertical-align:middle;
+}
+
+/* Product Info */
+
+.product-info{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.product-image{
+    width:60px;
+    height:60px;
+    border-radius:12px;
+    object-fit:cover;
+    background:#F3F4F6;
+}
+
+.product-details h4{
+    margin:0;
+    font-size:15px;
+    color:#2F3542;
+    font-weight:600;
+}
+
+.product-details span{
+    display:block;
+    margin-top:6px;
+    font-size:13px;
+    color:#9CA3AF;
+}
+
+.price{
+    font-weight:600;
+    color:#22C55E;
+}
+
+/* Action Button */
+
+.action-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:10px;
+    background:#F5F7FB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.action-btn svg{
+    font-size:18px;
+    color:#6B7280;
+}
+
+.action-btn:hover{
+    background:#22C55E;
+}
+
+.action-btn:hover svg{
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.product-row td{
+    padding:15px 10px;
+}
+
+.product-image{
+    width:50px;
+    height:50px;
+}
+
+.product-details h4{
+    font-size:14px;
+}
+
+.product-details span{
+    font-size:12px;
+}
+
+}

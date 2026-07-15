@@ -1,0 +1,63 @@
+.add-note-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:0 22px;
+    height:50px;
+
+    background:#22C55E;
+    color:#ffffff;
+
+    border:none;
+    border-radius:14px;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.add-note-button:hover{
+    background:#16A34A;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(34,197,94,.25);
+}
+
+.add-note-button:active{
+    transform:scale(.97);
+}
+
+.add-icon{
+    font-size:20px;
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.add-note-button{
+    padding:0 18px;
+    height:46px;
+    font-size:14px;
+}
+
+.add-icon{
+    font-size:18px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.add-note-button{
+    width:100%;
+    height:44px;
+    border-radius:12px;
+}
+
+}

@@ -1,0 +1,39 @@
+.upload-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    background:#2FB463;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    padding:14px 28px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.upload-btn:hover{
+    background:#279b56;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(47,180,99,.25);
+}
+
+.upload-btn:active{
+    transform:scale(.98);
+}
+
+.upload-icon{
+    font-size:20px;
+}
+
+@media(max-width:768px){
+
+.upload-btn{
+    width:100%;
+    padding:14px;
+    font-size:15px;
+}
+
+}

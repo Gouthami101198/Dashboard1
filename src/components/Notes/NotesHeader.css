@@ -1,0 +1,123 @@
+.notes-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+/* Title */
+
+.notes-title h1{
+    margin:0;
+    font-size:46px;
+    font-weight:700;
+    color:#2F3542;
+}
+
+/* Right Side */
+
+.notes-actions{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+/* Filter Button */
+
+.filter-btn{
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:14px;
+    background:#ffffff;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.filter-btn svg{
+    font-size:20px;
+    color:#4B5563;
+}
+
+.filter-btn:hover{
+    background:#F3F4F6;
+}
+
+/* Add Note Button */
+
+.add-note-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:0 22px;
+    height:48px;
+    border:none;
+    border-radius:14px;
+    background:#22C55E;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-note-btn svg{
+    font-size:20px;
+}
+
+.add-note-btn:hover{
+    background:#16A34A;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+.notes-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.notes-title h1{
+    font-size:34px;
+}
+
+.notes-actions{
+    width:100%;
+    justify-content:space-between;
+}
+
+.add-note-btn{
+    flex:1;
+    justify-content:center;
+}
+
+}
+
+@media (max-width:480px){
+
+.notes-title h1{
+    font-size:28px;
+}
+
+.notes-actions{
+    width:100%;
+}
+
+.filter-btn{
+    width:46px;
+    height:46px;
+}
+
+.add-note-btn{
+    height:46px;
+    padding:0 16px;
+    font-size:14px;
+}
+
+}

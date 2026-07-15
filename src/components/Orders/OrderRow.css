@@ -1,0 +1,106 @@
+.order-row{
+    transition:.3s;
+}
+
+.order-row:hover{
+    background:#F8FAFC;
+}
+
+.order-row td{
+    padding:20px;
+    border-bottom:1px solid #ECECEC;
+    vertical-align:middle;
+}
+
+/* Order ID */
+
+.order-id{
+    color:#22C55E;
+    font-weight:600;
+}
+
+/* Customer */
+
+.customer-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.customer-avatar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.customer-info h4{
+    margin:0;
+    font-size:15px;
+    color:#2F3542;
+    font-weight:600;
+}
+
+.customer-info p{
+    margin:4px 0 0;
+    color:#9CA3AF;
+    font-size:13px;
+}
+
+/* Amount */
+
+.amount{
+    color:#22C55E;
+    font-weight:600;
+}
+
+/* Action Button */
+
+.action-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:10px;
+    background:#F5F7FB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.action-btn svg{
+    font-size:18px;
+    color:#6B7280;
+}
+
+.action-btn:hover{
+    background:#22C55E;
+}
+
+.action-btn:hover svg{
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.order-row td{
+    padding:15px 10px;
+}
+
+.customer-avatar{
+    width:42px;
+    height:42px;
+}
+
+.customer-info h4{
+    font-size:14px;
+}
+
+.customer-info p{
+    font-size:12px;
+}
+
+}

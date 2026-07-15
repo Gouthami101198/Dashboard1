@@ -1,0 +1,93 @@
+.orders-table-container{
+    width:100%;
+    overflow-x:auto;
+    background:#fff;
+}
+
+.orders-table{
+    width:100%;
+    min-width:1100px;
+    border-collapse:collapse;
+}
+
+/* Header */
+
+.orders-table thead{
+    background:#F8FAFC;
+}
+
+.orders-table thead th{
+    padding:18px 20px;
+    text-align:left;
+    font-size:14px;
+    font-weight:600;
+    color:#6B7280;
+    border-bottom:1px solid #ECECEC;
+    white-space:nowrap;
+}
+
+/* Body */
+
+.orders-table tbody td{
+    padding:18px 20px;
+    border-bottom:1px solid #ECECEC;
+    vertical-align:middle;
+}
+
+.orders-table tbody tr{
+    transition:.3s;
+}
+
+.orders-table tbody tr:hover{
+    background:#F9FAFB;
+}
+
+.orders-table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+/* Scrollbar */
+
+.orders-table-container::-webkit-scrollbar{
+    height:8px;
+}
+
+.orders-table-container::-webkit-scrollbar-track{
+    background:#F3F4F6;
+}
+
+.orders-table-container::-webkit-scrollbar-thumb{
+    background:#C7CBD3;
+    border-radius:10px;
+}
+
+.orders-table-container::-webkit-scrollbar-thumb:hover{
+    background:#9CA3AF;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.orders-table{
+    min-width:1000px;
+}
+
+}
+
+@media(max-width:768px){
+
+.orders-table{
+    min-width:900px;
+}
+
+.orders-table thead th{
+    padding:15px;
+    font-size:13px;
+}
+
+.orders-table tbody td{
+    padding:15px;
+}
+
+}

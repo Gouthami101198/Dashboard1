@@ -1,0 +1,58 @@
+.filter-button{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:14px;
+    background:#ffffff;
+    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.filter-button svg{
+    font-size:20px;
+    color:#4B5563;
+}
+
+.filter-button:hover{
+    background:#F3F4F6;
+    transform:translateY(-2px);
+}
+
+.filter-button:active{
+    transform:scale(.96);
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.filter-button{
+    width:46px;
+    height:46px;
+}
+
+.filter-button svg{
+    font-size:18px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.filter-button{
+    width:42px;
+    height:42px;
+    border-radius:12px;
+}
+
+.filter-button svg{
+    font-size:16px;
+}
+
+}

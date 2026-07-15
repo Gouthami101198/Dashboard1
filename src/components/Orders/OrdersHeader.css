@@ -1,0 +1,86 @@
+.orders-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+/* Title */
+
+.orders-title h1{
+    margin:0;
+    font-size:46px;
+    font-weight:700;
+    color:#2F3542;
+}
+
+/* Right Side */
+
+.orders-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* Export Button */
+
+.export-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:13px 22px;
+    background:#fff;
+    border:1px solid #ECECEC;
+    border-radius:14px;
+    color:#555;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 3px 10px rgba(0,0,0,.04);
+}
+
+.export-btn svg{
+    font-size:18px;
+}
+
+.export-btn:hover{
+    background:#F8FAFC;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.orders-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.orders-title h1{
+    font-size:34px;
+}
+
+.orders-actions{
+    width:100%;
+}
+
+.export-btn{
+    width:100%;
+    justify-content:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.orders-title h1{
+    font-size:28px;
+}
+
+.export-btn{
+    padding:12px 16px;
+    font-size:14px;
+}
+
+}
