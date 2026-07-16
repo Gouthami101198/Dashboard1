@@ -2,21 +2,6 @@ import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-import {
-  FiGrid,
-  FiShoppingBag,
-  FiBox,
-  FiShoppingCart,
-  FiCalendar,
-  FiMail,
-  FiFolder,
-  FiCheckSquare,
-  FiUser,
-  FiSettings,
-  FiLogOut,
-  FiChevronDown,
-  FiChevronRight,
-} from "react-icons/fi";
 
 const Sidebar = () => {
   const [ecommerceOpen, setEcommerceOpen] = useState(true);
