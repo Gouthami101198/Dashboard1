@@ -67,7 +67,3 @@ const social = () => {
   );
 };
 export default social;
-
-
-
-export default Social;
