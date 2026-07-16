@@ -1,50 +1,118 @@
-import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
-import { sidebarData } from "./sidebarData";
-import logo from "../../assets/logo.png";
+import { useState } from "react";
+import {
+  FiGrid,
+  FiShoppingCart,
+  FiPackage,
+  FiClipboard,
+  FiCalendar,
+  FiMail,
+  FiMessageSquare,
+  FiFolder,
+  FiFileText,
+  FiUsers,
+  FiUser,
+  FiChevronDown,
+  FiChevronRight,
+} from "react-icons/fi";
+
+import "./Sidebar.css";
 
 const Sidebar = () => {
+  const [openEcommerce, setOpenEcommerce] = useState(true);
+
   return (
     <aside className="sidebar">
 
-      <div>
+      <div className="logo">
         <h2>FLOWER</h2>
       </div>
 
-      <div className="search">
+      <div className="search-box">
         <input type="text" placeholder="Search anything" />
       </div>
 
-      <p className="title">MAIN MENU</p>
+      <span className="menu-title">MAIN MENU</span>
 
-      <nav className="menu">
+      <nav>
 
-        {sidebarData.map((item) => (
-          <NavLink
-            key={item.path}
-            to={item.path}
-            end={item.path === "/"}
-            className={({ isActive }) =>
-              isActive ? "menu-link active" : "menu-link"
-            }
-          >
-            <span className="icon">{item.icon}</span>
+        <NavLink to="/" className="menu-item">
+          <FiGrid />
+          <span>Dashboard</span>
+        </NavLink>
 
-            <span className="text">{item.title}</span>
+        {/* Ecommerce */}
 
-            {item.badge && (
-              <span className="badge">
-                {item.badge}
-              </span>
-            )}
+        <button
+          className="menu-item dropdown-btn"
+          onClick={() => setOpenEcommerce(!openEcommerce)}
+        >
+          <div className="menu-left">
+            <FiShoppingCart />
+            <span>E-Commerce</span>
+          </div>
 
-            {item.arrow && (
-              <span className="arrow">
-                {item.arrow}
-              </span>
-            )}
-          </NavLink>
-        ))}
+          {openEcommerce ? <FiChevronDown /> : <FiChevronRight />}
+        </button>
+
+        {openEcommerce && (
+          <div className="submenu">
+
+            <NavLink to="/products" className="submenu-item">
+              Products
+            </NavLink>
+
+            <NavLink to="/orders" className="submenu-item">
+              Orders
+            </NavLink>
+
+          </div>
+        )}
+
+        <NavLink to="/calendar" className="menu-item">
+          <FiCalendar />
+          <span>Calendar</span>
+        </NavLink>
+
+        <NavLink to="/mail" className="menu-item">
+          <FiMail />
+          <span>Mail</span>
+        </NavLink>
+
+        <NavLink to="/chat" className="menu-item">
+          <FiMessageSquare />
+          <span>Chat</span>
+        </NavLink>
+
+        <NavLink to="/projects" className="menu-item">
+          <FiFolder />
+          <span>Projects</span>
+        </NavLink>
+
+        <NavLink to="/filemanager" className="menu-item">
+          <FiPackage />
+          <span>File Manager</span>
+        </NavLink>
+
+        <NavLink to="/task" className="menu-item">
+          <FiClipboard />
+          <span>Task</span>
+        </NavLink>
+
+        <NavLink to="/notes" className="menu-item">
+          <FiFileText />
+          <span>Notes</span>
+        </NavLink>
+
+        <NavLink to="/contacts" className="menu-item">
+          <FiUsers />
+          <span>Contacts</span>
+        </NavLink>
+
+        <NavLink to="/profile" className="menu-item">
+          <FiUser />
+          <span>Profile</span>
+        </NavLink>
 
       </nav>
 
