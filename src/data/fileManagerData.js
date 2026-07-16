@@ -5,10 +5,10 @@ import folderGreen from "../assets/folders/folder-green.PNG";
 import folderRed from "../assets/folders/folder-red.PNG";
 
 // File Icons
-import pdfIcon from "../assets/pdf.PNG";
+import pdfIcon from "../assets/pdf.png";
 import docIcon from "../assets/doc.PNG";
 import imageIcon from "../assets/image.PNG";
-import zipIcon from "../assets/zip.PNG";
+import zipIcon from "../assets/zip.png";
 
 // =========================
 // Folder Tree
