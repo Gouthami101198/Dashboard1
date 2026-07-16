@@ -7,7 +7,7 @@ import {
   FiDownload,
 } from "react-icons/fi";
 
-import preview from "../../assets/preview.png";
+import preview from "../../assets/preview.PNG";
 
 const FileInfoPanel = () => {
   return (
