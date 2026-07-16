@@ -83,11 +83,6 @@ const Sidebar = () => {
           <span>Mail</span>
         </NavLink>
 
-        <NavLink to="/chat" className="menu-item">
-          <FiMessageSquare />
-          <span>Chat</span>
-        </NavLink>
-
         <NavLink to="/projects" className="menu-item">
           <FiFolder />
           <span>Projects</span>
@@ -106,11 +101,6 @@ const Sidebar = () => {
         <NavLink to="/contacts" className="menu-item">
           <FiUsers />
           <span>Contacts</span>
-        </NavLink>
-
-        <NavLink to="/profile" className="menu-item">
-          <FiUser />
-          <span>Profile</span>
         </NavLink>
 
       </nav>
