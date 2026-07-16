@@ -40,7 +40,11 @@ const Sidebar = () => {
           <FiGrid />
           <span>Dashboard</span>
         </NavLink>
-
+        <NavLink to="/task" className="menu-item">
+          <FiClipboard />
+          <span>Task</span>
+        </NavLink>
+        
         {/* Ecommerce */}
 
         <button
@@ -92,11 +96,6 @@ const Sidebar = () => {
         <NavLink to="/filemanager" className="menu-item">
           <FiPackage />
           <span>File Manager</span>
-        </NavLink>
-
-        <NavLink to="/task" className="menu-item">
-          <FiClipboard />
-          <span>Task</span>
         </NavLink>
 
         <NavLink to="/notes" className="menu-item">
