@@ -7,7 +7,7 @@ import {
   FiSend,
 } from "react-icons/fi";
 
-import avatar from "../../assets/avatars/avatar1.png";
+import avatar1 from "../../assets/avatars/avatar1.PNG";
 
 const CreatePost = () => {
   return (
