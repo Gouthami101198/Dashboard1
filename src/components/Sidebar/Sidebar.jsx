@@ -33,13 +33,11 @@ const Sidebar = () => {
         {/* Dashboard */}
 
         <NavLink to="/" className="menu-item">
-          <FiGrid />
           <span>Dashboard</span>
         </NavLink>
         {/* Task */}
 
         <NavLink to="/task" className="menu-item">
-          <FiCheckSquare />
           <span>Task</span>
         </NavLink>
         {/* Ecommerce */}
@@ -51,14 +49,14 @@ const Sidebar = () => {
             onClick={() => setEcommerceOpen(!ecommerceOpen)}
           >
             <div className="menu-left">
-              <FiShoppingBag />
+              
               <span>E-Commerce</span>
             </div>
 
             {ecommerceOpen ? (
-              <FiChevronDown />
+          
             ) : (
-              <FiChevronRight />
+            
             )}
           </button>
 
@@ -69,7 +67,7 @@ const Sidebar = () => {
                 to="/products"
                 className="submenu-item"
               >
-                <FiBox />
+               
                 Products
               </NavLink>
 
@@ -77,7 +75,7 @@ const Sidebar = () => {
                 to="/orders"
                 className="submenu-item"
               >
-                <FiShoppingCart />
+                
                 Orders
               </NavLink>
 
@@ -89,28 +87,28 @@ const Sidebar = () => {
         {/* Calendar */}
 
         <NavLink to="/calendar" className="menu-item">
-          <FiCalendar />
+          
           <span>Calendar</span>
         </NavLink>
 
         {/* Mail */}
 
         <NavLink to="/mail" className="menu-item">
-          <FiMail />
+    
           <span>Mail</span>
         </NavLink>
 
         {/* Projects */}
 
         <NavLink to="/projects" className="menu-item">
-          <FiFolder />
+          
           <span>Projects</span>
         </NavLink>
 
         {/* File Manager */}
 
         <NavLink to="/filemanager" className="menu-item">
-          <FiFolder />
+
           <span>File Manager</span>
         </NavLink>
 
@@ -119,14 +117,14 @@ const Sidebar = () => {
         {/* Profile */}
 
         <NavLink to="/contacts" className="menu-item">
-          <FiUser />
+        
           <span>contacts</span>
         </NavLink>
 
         {/* Settings */}
 
         <NavLink to="/notes" className="menu-item">
-          <FiSettings />
+      
           <span>notes</span>
         </NavLink>
 
