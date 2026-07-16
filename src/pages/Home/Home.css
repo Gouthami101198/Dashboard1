@@ -6,11 +6,9 @@
 
 .main-content{
     flex:1;
-    margin-left:280px;
     padding:30px;
+    overflow-x:hidden;
 }
-
-/* Charts */
 
 .chart-row{
     display:grid;
@@ -19,8 +17,6 @@
     margin-top:25px;
 }
 
-/* Middle */
-
 .middle-row{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -28,16 +24,12 @@
     margin-top:25px;
 }
 
-/* Bottom */
-
 .bottom-row{
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:25px;
     margin-top:25px;
 }
-
-/* Responsive */
 
 @media(max-width:1200px){
 
@@ -49,18 +41,9 @@
 
 }
 
-@media(max-width:992px){
-
-.main-content{
-    margin-left:90px;
-}
-
-}
-
 @media(max-width:768px){
 
 .main-content{
-    margin-left:70px;
     padding:20px;
 }
 
