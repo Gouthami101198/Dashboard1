@@ -1,48 +1,55 @@
 .sidebar{
-    width:260px;
-    height:100vh;
+    width:270px;
+    min-height:100vh;
     background:#fff;
     border-right:1px solid #ececec;
-    padding:25px 20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    position:sticky;
-    top:0;
+    padding:20px;
 }
 
 .logo{
+    text-align:center;
     margin-bottom:30px;
 }
 
 .logo h2{
-    margin:0;
     color:#22C55E;
-    font-size:28px;
-    font-weight:700;
+    margin:0;
 }
 
-nav{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
+.search-box{
+    margin-bottom:25px;
 }
 
-.menu-item,
-.dropdown-btn{
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+}
+
+.menu-title{
+    display:block;
+    color:#999;
+    font-size:12px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.menu-item{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    width:100%;
-    padding:14px 16px;
-    border-radius:12px;
     text-decoration:none;
     color:#555;
-    border:none;
-    background:transparent;
-    cursor:pointer;
+    padding:12px 15px;
+    border-radius:10px;
+    margin-bottom:8px;
     transition:.3s;
-    font-size:15px;
+    background:none;
+    border:none;
+    width:100%;
+    cursor:pointer;
 }
 
 .menu-left{
@@ -52,78 +59,30 @@ nav{
 }
 
 .menu-item:hover,
-.dropdown-btn:hover{
-    background:#22C55E;
-    color:#fff;
-}
-
 .menu-item.active{
     background:#22C55E;
     color:#fff;
 }
 
 .submenu{
-    margin-left:25px;
-    margin-bottom:8px;
-    display:flex;
-    flex-direction:column;
-    gap:5px;
+    margin-left:40px;
+    margin-bottom:10px;
 }
 
 .submenu-item{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    padding:10px 15px;
-    border-radius:10px;
+    display:block;
     text-decoration:none;
     color:#666;
-    transition:.3s;
-}
-
-.submenu-item:hover{
-    background:#F3F4F6;
+    padding:8px 0;
 }
 
 .submenu-item.active{
-    background:#22C55E;
-    color:#fff;
-}
-
-.logout-btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    padding:14px;
-    border:none;
-    border-radius:12px;
-    background:#EF4444;
-    color:#fff;
-    cursor:pointer;
-    font-size:15px;
-    transition:.3s;
-}
-
-.logout-btn:hover{
-    background:#DC2626;
-}
-
-@media(max-width:992px){
-
-.sidebar{
-    width:220px;
-}
-
+    color:#22C55E;
+    font-weight:600;
 }
 
 @media(max-width:768px){
-
-.sidebar{
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:1000;
-}
-
+    .sidebar{
+        width:220px;
+    }
 }
