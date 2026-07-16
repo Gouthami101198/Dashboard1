@@ -1,124 +1,52 @@
 import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
-
+import { sidebarData } from "./sidebarData";
+import logo from "../../assets/logo.png";
 
 const Sidebar = () => {
-  const [ecommerceOpen, setEcommerceOpen] = useState(true);
-
   return (
     <aside className="sidebar">
 
-      <div className="logo">
+      <div>
         <h2>FLOWER</h2>
       </div>
 
-      <nav>
+      <div className="search">
+        <input type="text" placeholder="Search anything" />
+      </div>
 
-        {/* Dashboard */}
+      <p className="title">MAIN MENU</p>
 
-        <NavLink to="/" className="menu-item">
-          <span>Dashboard</span>
-        </NavLink>
-        {/* Task */}
+      <nav className="menu">
 
-        <NavLink to="/task" className="menu-item">
-          <span>Task</span>
-        </NavLink>
-        {/* Ecommerce */}
-
-        <div>
-
-          <button
-            className="menu-item dropdown-btn"
-            onClick={() => setEcommerceOpen(!ecommerceOpen)}
+        {sidebarData.map((item) => (
+          <NavLink
+            key={item.path}
+            to={item.path}
+            end={item.path === "/"}
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
           >
-            <div className="menu-left">
-              
-              <span>E-Commerce</span>
-            </div>
+            <span className="icon">{item.icon}</span>
 
-            {ecommerceOpen ? (
-          
-            ) : (
-            
+            <span className="text">{item.title}</span>
+
+            {item.badge && (
+              <span className="badge">
+                {item.badge}
+              </span>
             )}
-          </button>
 
-          {ecommerceOpen && (
-            <div className="submenu">
-
-              <NavLink
-                to="/products"
-                className="submenu-item"
-              >
-               
-                Products
-              </NavLink>
-
-              <NavLink
-                to="/orders"
-                className="submenu-item"
-              >
-                
-                Orders
-              </NavLink>
-
-            </div>
-          )}
-
-        </div>
-
-        {/* Calendar */}
-
-        <NavLink to="/calendar" className="menu-item">
-          
-          <span>Calendar</span>
-        </NavLink>
-
-        {/* Mail */}
-
-        <NavLink to="/mail" className="menu-item">
-    
-          <span>Mail</span>
-        </NavLink>
-
-        {/* Projects */}
-
-        <NavLink to="/projects" className="menu-item">
-          
-          <span>Projects</span>
-        </NavLink>
-
-        {/* File Manager */}
-
-        <NavLink to="/filemanager" className="menu-item">
-
-          <span>File Manager</span>
-        </NavLink>
-
-        
-
-        {/* Profile */}
-
-        <NavLink to="/contacts" className="menu-item">
-        
-          <span>contacts</span>
-        </NavLink>
-
-        {/* Settings */}
-
-        <NavLink to="/notes" className="menu-item">
-      
-          <span>notes</span>
-        </NavLink>
+            {item.arrow && (
+              <span className="arrow">
+                {item.arrow}
+              </span>
+            )}
+          </NavLink>
+        ))}
 
       </nav>
-
-      <button className="logout-btn">
-        <FiLogOut />
-        Logout
-      </button>
 
     </aside>
   );
