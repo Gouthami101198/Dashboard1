@@ -1,38 +1,267 @@
+/* ==========================
+   Mail Page
+========================== */
+
 .mail-page{
     display:flex;
     min-height:100vh;
-    background:#f5f7fb;
+    background:#F5F7FB;
 }
+
+/* Sidebar */
+
+.mail-page .sidebar{
+    width:270px;
+    flex-shrink:0;
+}
+
+/* Main */
 
 .mail-main{
     flex:1;
     display:flex;
     flex-direction:column;
+    overflow:hidden;
 }
+
+/* Container */
 
 .mail-container{
-    display:flex;
     flex:1;
-    overflow:hidden;
+    padding:30px;
+    overflow-y:auto;
 }
 
-.mail-section{
-    flex:1;
+/* Layout */
+
+.mail-layout{
+    display:grid;
+    grid-template-columns:260px 400px 1fr;
+    gap:25px;
+}
+
+/* Cards */
+
+.mail-sidebar,
+.mail-list,
+.mail-preview{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+}
+
+/* ==========================
+   Mail Sidebar
+========================== */
+
+.mail-sidebar{
+    padding:20px;
+}
+
+.compose-btn{
+    width:100%;
+    background:#22C55E;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.compose-btn:hover{
+    background:#16A34A;
+}
+
+.mail-menu{
     display:flex;
     flex-direction:column;
-    background:#fff;
+    gap:10px;
 }
 
-.mail-body{
-    flex:1;
+.mail-menu a{
     display:flex;
-    overflow:hidden;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 15px;
+    text-decoration:none;
+    color:#555;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.mail-menu a:hover,
+.mail-menu a.active{
+    background:#22C55E;
+    color:#fff;
+}
+
+/* ==========================
+   Mail List
+========================== */
+
+.mail-list-header{
+    padding:20px;
+    border-bottom:1px solid #ECECEC;
+}
+
+.mail-search{
+    width:100%;
+    padding:12px 15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+}
+
+.mail-items{
+    max-height:700px;
+    overflow-y:auto;
+}
+
+.mail-item{
+    display:flex;
+    gap:15px;
+    padding:18px;
+    border-bottom:1px solid #ECECEC;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.mail-item:hover{
+    background:#F9FAFB;
+}
+
+.mail-avatar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.mail-info{
+    flex:1;
+}
+
+.mail-info h4{
+    margin:0;
+    color:#2F3542;
+    font-size:15px;
+}
+
+.mail-subject{
+    margin:6px 0;
+    color:#555;
+    font-weight:600;
+}
+
+.mail-text{
+    color:#9CA3AF;
+    font-size:13px;
+}
+
+.mail-time{
+    color:#9CA3AF;
+    font-size:12px;
+}
+
+/* ==========================
+   Mail Preview
+========================== */
+
+.mail-preview{
+    display:flex;
+    flex-direction:column;
+}
+
+.preview-header{
+    padding:25px;
+    border-bottom:1px solid #ECECEC;
+}
+
+.preview-header h2{
+    margin-bottom:8px;
+    color:#2F3542;
+}
+
+.preview-body{
+    padding:25px;
+    line-height:1.8;
+    color:#555;
+}
+
+.preview-footer{
+    padding:20px 25px;
+    border-top:1px solid #ECECEC;
+    display:flex;
+    gap:15px;
+}
+
+.reply-btn,
+.forward-btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.reply-btn{
+    background:#22C55E;
+    color:#fff;
+}
+
+.forward-btn{
+    background:#F3F4F6;
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+.mail-items::-webkit-scrollbar{
+    width:6px;
+}
+
+.mail-items::-webkit-scrollbar-thumb{
+    background:#D1D5DB;
+    border-radius:10px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:1400px){
+
+.mail-layout{
+    grid-template-columns:250px 320px 1fr;
+}
+
 }
 
 @media(max-width:1200px){
 
-.mail-body{
-    flex-direction:column;
+.mail-layout{
+    grid-template-columns:250px 1fr;
+}
+
+.mail-preview{
+    grid-column:span 2;
+}
+
+}
+
+@media(max-width:992px){
+
+.mail-layout{
+    grid-template-columns:1fr;
+}
+
+.mail-preview{
+    grid-column:auto;
 }
 
 }
@@ -40,7 +269,23 @@
 @media(max-width:768px){
 
 .mail-container{
-    flex-direction:column;
+    padding:20px;
+}
+
+}
+
+@media(max-width:480px){
+
+.mail-container{
+    padding:10px;
+}
+
+.compose-btn{
+    padding:12px;
+}
+
+.mail-item{
+    padding:15px;
 }
 
 }
